@@ -75,4 +75,3 @@ SELECT DISTINCT
         Order by COUNT(*) desc, [Inflation]
     ) as Mode_Inflation
 FROM Stats;
-
