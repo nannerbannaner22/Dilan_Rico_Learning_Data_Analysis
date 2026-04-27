@@ -201,3 +201,6 @@ insert into [smd].[Social_Media_Demographics] select (select [Id] from [smd].Pla
 insert into [smd].[Social_Media_Demographics] select (select [Id] from [smd].Platform p where p.Id = 23),0.59,0,(select top 1 [Id] from [smd].[Demographic_Ranges] dr where dr.Id = 5),70,70,49.90,50.10,'Significant user base in China with many  users. Nearly balanced gender';
 insert into [smd].[Social_Media_Demographics] select (select [Id] from [smd].Platform p where p.Id = 16),1.39,0,(select top 1 [Id] from [smd].[Demographic_Ranges] dr where dr.Id = 35),36,36,48,52,'Dominant in China significant users over 51. Slightly more male users globally';
 insert into [smd].[Social_Media_Demographics] select (select [Id] from [smd].Platform p where p.Id = 23),0.24,0,(select top 1 [Id] from [smd].[Demographic_Ranges] dr where dr.Id = 36),73,73,37,63,'Strong male dominance especially among younger adults interested in gaming';
+
+select * from [smd].[Social_Media_Demographics_View] smdv;
+
